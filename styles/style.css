@@ -7,63 +7,17 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'Roboto', sans-serif;
   color: #fff;
+  background-color: #1f2937;
 }
 
 .container {  
-  max-width: 1300px;
   margin: 0 auto;
   padding: 2em 1em;
 }
 
-/* header */
-
-.logo {
-  width: 60px;
-  cursor: pointer;
-  margin-right: auto;
-}
-
-header {
-  text-align: center;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #1f2937;
-}
- 
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  align-items: center;
-  list-style: none;
-
-  margin: 2em auto 0;
-  max-width: 600px;
-}
-
-.nav-links li {
-  padding: 0px 20px;
-}
-
-.nav-links li:nth-child(3) {
-  padding: 0px 20px;
-  margin-right: auto;
-}
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-  color: #0088a9;
-}
-
-/* css for all buttons */
+/* buttons */
 
 li, a, button {
   font-family: 'Roboto Medium', sans-serif;
@@ -86,25 +40,92 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
-/* main page */
+/* header */
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+header {
+  text-align: center;
+
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #1f2937; */
+}
+
+nav {
+  margin: 2em auto 0;
+  max-width: 600px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  transition: all 0.3s ease 0s;
+  font-size: 1em;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #0088a9; 
+}
+
+
+
+/*  */
+
+/* .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+  list-style: none;
+
+  margin: 2em auto 0;
+  max-width: 600px;
+}
+
+.nav-links li {
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+} */
+
+/* Main */
 
 main {
   display: flex;
-  gap: 50px;
   margin: 100px;
-  padding: 30px 1em;
-}
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #fff;
-  background-color: #1f2937; 
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .hero {
   display: flex;
   flex-flow: column wrap;
-  gap: 20px;
+  text-align: center;
 }
 
 .hero h1 {
@@ -114,12 +135,24 @@ body {
 
 .hero p {
   font-size: 18px;
+  line-height: 1.8em;
+
+  max-width: 500px;
+  margin: 3em;
 }
 
 .img-placeholder img {
-  width: 450px;
+  width: 500px;
   height: auto;
+  align-self: center;
+  border-radius: 10px;
 }
+
+/* .img-placeholder img:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #315b9a;
+  transition: all 0.3s ease 0s;
+} */
 
 
 /* .hero-text {
@@ -139,10 +172,93 @@ body {
   color: #e5e7eb;
 } */
 
-/* footer */
+/* About Page */
+
+.container.about-section {
+  background-color: rgb(0, 135, 168);
+  padding: 100px 0;
+  margin: 0;
+}
+
+.random-info {
+  display: flex;
+  gap: 50px;
+
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-title {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.about-title:hover {
+  text-shadow: -1px -1px 1px rgb(32, 31, 31);
+  transition: all 0.3s ease 0s;
+}
+
+.about-imgs img {
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.about-imgs{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 40px
+}
+
+.about-imgs img:hover {
+  box-shadow: 10px 10px rgb(13, 90, 109);
+}
+
+.random-info img {
+  width: 200px;
+  height: auto;
+}
+
+/* Quote */
+
+.container.quote-section {
+  padding: 100px 200px;
+  margin: 0;
+  display: flex;
+}
+
+.quote {
+  font-size: x-large;
+  font-weight: 100px;
+}
+
+.quote-credit {
+  text-align: right;
+  padding: 20px 1em;
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+/* Sign-up Page */
+
+.container.action-section {
+  background-color: rgb(188, 188, 188);
+  padding: 100px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.action-box {
+  background-color: #1f2937;
+  padding: 40px 1em;
+  border-radius: 10px;
+}
+
+/* Footer */
 
 .footer {
-  background-color: rgb(32, 32, 32);
   color: #fff;
   height: 100px;
   padding: 16px;
