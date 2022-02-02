@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&family=Source+Sans+Pro:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252A;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+}
+
+.container {  
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
 
 /* header */
@@ -15,31 +25,34 @@
   margin-right: auto;
 }
 
-li, a, button {
-  font-family: 'Roboto Medium', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
-}
-
 header {
+  text-align: center;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  background-color: #1f2937;
 }
-
+ 
 .nav-links {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
   align-items: center;
   list-style: none;
+
+  margin: 2em auto 0;
+  max-width: 600px;
 }
 
 .nav-links li {
   padding: 0px 20px;
+}
+
+.nav-links li:nth-child(3) {
+  padding: 0px 20px;
+  margin-right: auto;
 }
 
 .nav-links li a {
@@ -48,6 +61,16 @@ header {
 
 .nav-links li a:hover {
   color: #0088a9;
+}
+
+/* css for all buttons */
+
+li, a, button {
+  font-family: 'Roboto Medium', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
 button {
@@ -63,23 +86,72 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
-/* front page */
+/* main page */
 
-.hero-text {
+main {
+  display: flex;
+  gap: 50px;
+  margin: 100px;
+  padding: 30px 1em;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  background-color: #1f2937; 
+}
+
+.hero {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.img-placeholder img {
+  width: 450px;
+  height: auto;
+}
+
+
+/* .hero-text {
   display: flex;
   flex-direction: column;
   width: 500px;
 }
 
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #f9faf8;
+}
 
+.hero-text h3 {
+  font-size: 18px;
+  color: #e5e7eb;
+} */
 
 /* footer */
 
 .footer {
   background-color: rgb(32, 32, 32);
   color: #fff;
-  height: 50px;
+  height: 100px;
   padding: 16px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer h5 {
+  font-size: medium;
 }
