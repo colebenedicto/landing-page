@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@0,200;0,300;1,400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -50,12 +50,6 @@ button:hover {
 
 header {
   text-align: center;
-
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #1f2937; */
 }
 
 nav {
@@ -85,9 +79,7 @@ nav ul li a:hover {
   color: #0088a9; 
 }
 
-
-
-/*  */
+/* media queries */
 
 /* .nav-links {
   display: flex;
@@ -116,15 +108,11 @@ nav ul li a:hover {
 
 main {
   display: flex;
-  margin: 100px;
-
   flex-flow: row wrap;
-  align-items: center;
+  justify-content: center;
 }
 
 .hero {
-  display: flex;
-  flex-flow: column wrap;
   text-align: center;
 }
 
@@ -136,13 +124,16 @@ main {
 .hero p {
   font-size: 18px;
   line-height: 1.8em;
-
   max-width: 500px;
   margin: 3em;
 }
 
+main figure {
+  text-align: center;
+}
+
 .img-placeholder img {
-  width: 500px;
+  width: 300px;
   height: auto;
   align-self: center;
   border-radius: 10px;
@@ -192,10 +183,11 @@ main {
 .about-title {
   font-size: 36px;
   cursor: pointer;
+  color: rgba(255, 255, 255, 1);
 }
 
 .about-title:hover {
-  text-shadow: -1px -1px 1px rgb(32, 31, 31);
+  color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease 0s;
 }
 
@@ -221,10 +213,21 @@ main {
   height: auto;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.info .text {
+  font-weight: 300px;
+}
+
 /* Quote */
 
 .container.quote-section {
-  padding: 100px 200px;
+  padding: 100px 10em;
   margin: 0;
   display: flex;
 }
@@ -244,16 +247,35 @@ main {
 /* Sign-up Page */
 
 .container.action-section {
-  background-color: rgb(188, 188, 188);
+  background-color: rgba(145, 92, 145, 0.8);
   padding: 100px 0;
   margin: 0;
   text-align: center;
+  display: grid;
+  place-items: center;
 }
 
-.action-box {
+.card {
   background-color: #1f2937;
-  padding: 40px 1em;
+  padding: 40px 3em;
   border-radius: 10px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sign-up {
+  
+}
+
+.sign-up-title {
+  font-weight: 700;
+}
+
+.sign-up-content {
+  font-size: 10px;
+  font-weight: 100;
 }
 
 /* Footer */
