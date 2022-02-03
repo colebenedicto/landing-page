@@ -219,7 +219,7 @@ main .img-placeholder {
 
 .card {
   background-color: #1f2937;
-  padding: 40px 3em;
+  padding: 2em 40px;
   border-radius: 10px;
   gap: 15px;
   display: flex;
@@ -240,7 +240,6 @@ main .img-placeholder {
 
 .sign-up-content {
   font-size: smaller;
-  padding-bottom: .9em;
   font-weight: 100;
   margin-right: auto;
 }
@@ -258,4 +257,14 @@ main .img-placeholder {
 
 .footer-text {
   font-weight: 300;
+}
+
+.footer-link {
+  color: rgba(0, 135, 168, 1);
+}
+
+.footer-link:hover, 
+.footer-link:focus {
+  color: rgba(0, 135, 168, 0.8);
+  transition: all 0.3s ease 0s;
 }
