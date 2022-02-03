@@ -77,37 +77,11 @@ nav ul li a:focus {
   color: #0088a9; 
 }
 
-/* media queries */
-
-/* .nav-links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  align-items: center;
-  list-style: none;
-
-  margin: 2em auto 0;
-  max-width: 600px;
-}
-
-.nav-links li {
-  padding: 0px 20px;
-}
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-  color: #0088a9;
-} */
-
 /* Main */
 
-main {
+main.container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .hero {
@@ -117,49 +91,42 @@ main {
 .hero h1 {
   font-size: 48px;
   font-weight: 700;
+  margin-top: 30px;
+}
+
+.hero h1::after {
+  content: '';
+  display: block;
+  width: 5em;
+  height: 2px;
+  background-color: rgba(0, 136, 169, 0.7);
+  margin: 50px auto 0;
 }
 
 .hero p {
   font-size: 18px;
   line-height: 1.8em;
-  max-width: 500px;
-  margin: 3em;
+  /* max-width: 600px;
+  text-align: center; */
+  margin: 3em 3em -10px;
 }
 
-main figure {
+main .img-placeholder {
   text-align: center;
 }
 
 .img-placeholder img {
-  width: 300px;
+  width: 400px;
   height: auto;
   align-self: center;
   border-radius: 10px;
+  margin: 4em;
 }
 
-/* .img-placeholder img:hover {
-  border-radius: 10px;
-  box-shadow: 0 0 10px #315b9a;
+.img-placeholder img:hover {
+  box-shadow: 10px 10px rgb(47, 64, 87);
   transition: all 0.3s ease 0s;
-} */
-
-
-/* .hero-text {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
 }
-
-.hero-text h2 {
-  font-size: 48px;
-  font-weight: extra-bold;
-  color: #f9faf8;
-}
-
-.hero-text h3 {
-  font-size: 18px;
-  color: #e5e7eb;
-} */
 
 /* About Page */
 
@@ -180,13 +147,7 @@ main figure {
 
 .about-title {
   font-size: 36px;
-  cursor: pointer;
   color: rgba(255, 255, 255, 1);
-}
-
-.about-title:hover {
-  color: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease 0s;
 }
 
 .about-imgs img {
@@ -197,9 +158,11 @@ main figure {
 
 .about-imgs{
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 40px
+  gap: 40px;
+  margin: 0 2.5em;
 }
 
 .about-imgs img:hover {
@@ -245,8 +208,8 @@ main figure {
 /* Sign-up Page */
 
 .container.action-section {
-  background-color: rgba(145, 92, 145, 0.8);
-  padding: 100px 0;
+  background-color: rgba(238, 238, 238, 0.8);
+  padding: 80px 0;
   margin: 0;
   text-align: center;
   display: grid;
@@ -259,21 +222,26 @@ main figure {
   border-radius: 10px;
   gap: 15px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  width: 500px;
+  align-items: center;
 }
 
 .sign-up {
-  
+  margin: 0 auto;
+  text-align: left;
 }
 
 .sign-up-title {
+  font-size: larger;
   font-weight: 700;
+  padding-bottom: .7em;
 }
 
 .sign-up-content {
-  font-size: 10px;
+  font-size: smaller;
+  padding-bottom: .9em;
   font-weight: 100;
+  margin-right: auto;
 }
 
 /* Footer */
@@ -285,9 +253,8 @@ main figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
 }
 
-.footer h5 {
-  font-size: medium;
+.footer-text {
+  font-weight: 300;
 }
