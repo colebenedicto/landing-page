@@ -43,9 +43,8 @@ button:hover {
 /* header */
 
 .logo {
-  width: 60px;
+  width: 180px;
   cursor: pointer;
-  margin-right: auto;
 }
 
 header {
@@ -54,14 +53,12 @@ header {
 
 nav {
   margin: 2em auto 0;
-  max-width: 600px;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
+.nav-links {
+  margin: 0 3em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav ul li {
@@ -75,7 +72,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
   color: #0088a9; 
 }
 
