@@ -1,3 +1,4 @@
 **The Odin Project Landing page**
-By: colebenedicto
+
+I'm done with the mobile view now but the web view still looks like shit
 
