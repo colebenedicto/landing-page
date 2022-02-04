@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   background-color: #1f2937;
 }
@@ -22,13 +22,13 @@ body {
 li, a, button {
   font-family: 'Roboto Medium', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 36px;
   color: #edf0f1;
   text-decoration: none;
 }
 
 button {
-  padding: 9px 25px;
+  padding: .7em 2em;
   background-color: rgba(0, 136, 169, 1);
   border: none;
   border-radius: 50px;
@@ -45,6 +45,7 @@ button:hover {
 .logo {
   width: 150px;
   cursor: pointer;
+  margin: 2em;
 }
 
 header {
@@ -67,9 +68,10 @@ nav ul li {
 
 nav ul li a {
   transition: all 0.3s ease 0s;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
   text-decoration: none;
+  padding: 2em 0;
 }
 
 nav ul li a:hover,
@@ -98,29 +100,29 @@ main.container {
   content: '';
   display: block;
   width: 5em;
-  height: 2px;
+  height: 3px;
   background-color: rgba(0, 136, 169, 0.7);
-  margin: 50px auto 0;
+  margin: 50px auto 10px;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.8em;
-  /* max-width: 600px;
-  text-align: center; */
-  margin: 3em 3em -10px;
+  padding-bottom: 60px;
+  margin: 3em 4em 40px;
 }
 
 main .img-placeholder {
   text-align: center;
+  margin: 40px auto;
 }
 
 .img-placeholder img {
-  width: 400px;
+  width: 650px;
   height: auto;
   align-self: center;
   border-radius: 10px;
-  margin: 4em;
+  margin: .2em 4em 4em;
 }
 
 .img-placeholder img:hover {
@@ -146,7 +148,7 @@ main .img-placeholder {
 }
 
 .about-title {
-  font-size: 36px;
+  font-size: 48px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -170,7 +172,7 @@ main .img-placeholder {
 }
 
 .random-info img {
-  width: 200px;
+  width: 350px;
   height: auto;
 }
 
@@ -178,11 +180,11 @@ main .img-placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .info .text {
-  font-size: 18px;
+  font-size: 2em;
   font-weight: 300px;
 }
 
@@ -210,7 +212,7 @@ main .img-placeholder {
 
 .container.action-section {
   background-color: rgba(238, 238, 238, 0.8);
-  padding: 60px 0;
+  padding: 5em 0;
   margin: 0;
   text-align: center;
   display: grid;
@@ -219,11 +221,11 @@ main .img-placeholder {
 
 .card {
   background-color: #1f2937;
-  padding: 2em 40px;
+  padding: 4em 5em;
   border-radius: 10px;
   gap: 15px;
   display: flex;
-  width: 500px;
+  width: 50em;
   align-items: center;
 }
 
@@ -233,13 +235,13 @@ main .img-placeholder {
 }
 
 .sign-up-title {
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 700;
   padding-bottom: .7em;
 }
 
 .sign-up-content {
-  font-size: smaller;
+  font-size: 1.5em;
   font-weight: 100;
   margin-right: auto;
 }
@@ -248,14 +250,15 @@ main .img-placeholder {
 
 .footer {
   color: #fff;
-  height: 100px;
-  padding: 16px;
+  height: 8em;
+  padding: 16px 5em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-text {
+.footer .footer-text {
+  font-size: 28px;
   font-weight: 300;
 }
 
