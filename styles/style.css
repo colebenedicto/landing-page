@@ -12,262 +12,33 @@ body {
   background-color: #1f2937;
 }
 
-.container {  
-  margin: 0 auto;
-  padding: 2em 1em;
-}
-
-/* buttons */
-
-li, a, button {
-  font-family: 'Roboto Medium', sans-serif;
-  font-weight: 500;
-  font-size: 36px;
-  color: #edf0f1;
-  text-decoration: none;
-}
-
-button {
-  padding: .7em 2em;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-}
-
-/* header */
-
-.logo {
-  width: 150px;
-  cursor: pointer;
-  margin: 2em;
+nav {
+  border: 2px solid yellow;
 }
 
 header {
-  text-align: center;
-}
-
-nav {
-  margin: 2em auto 0;
-}
-
-.nav-links {
-  margin: 0 3em;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
 }
 
-nav ul li {
+li {
   list-style: none;
 }
 
-nav ul li a {
-  transition: all 0.3s ease 0s;
-  font-size: 1em;
-  font-weight: 300;
+li a {
   text-decoration: none;
-  padding: 2em 0;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-  color: #0088a9; 
-}
-
-/* Main */
-
-main.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero {
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-top: 20px;
-}
-
-.hero h1::after {
-  content: '';
-  display: block;
-  width: 5em;
-  height: 3px;
-  background-color: rgba(0, 136, 169, 0.7);
-  margin: 50px auto 10px;
-}
-
-.hero p {
-  font-size: 12px;
-  line-height: 1.8em;
-  padding-bottom: 60px;
-  margin: 3em 4em 40px;
-}
-
-main .img-placeholder {
-  text-align: center;
-  margin: 40px auto;
-}
-
-.img-placeholder img {
-  width: 650px;
-  height: auto;
-  align-self: center;
-  border-radius: 10px;
-  margin: .2em 4em 4em;
-}
-
-.img-placeholder img:hover {
-  box-shadow: 10px 10px rgb(47, 64, 87);
-  transition: all 0.3s ease 0s;
-}
-
-/* About Page */
-
-.container.about-section {
-  background-color: rgb(0, 135, 168);
-  padding: 100px 0;
-  margin: 0;
-}
-
-.random-info {
-  display: flex;
-  gap: 50px;
-
-  flex-flow: column wrap;
-  align-items: center;
-  gap: 50px;
-}
-
-.about-title {
-  font-size: 48px;
-  color: rgba(255, 255, 255, 1);
-}
-
-.about-imgs img {
-  border-radius: 10px;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-.about-imgs{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 40px;
-  margin: 0 2.5em;
-}
-
-.about-imgs img:hover {
-  box-shadow: 10px 10px rgb(13, 90, 109);
-}
-
-.random-info img {
-  width: 350px;
-  height: auto;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-
-.info .text {
-  font-size: 2em;
-  font-weight: 300px;
-}
-
-/* Quote */
-
-.container.quote-section {
-  padding: 100px 10em;
-  margin: 0;
-  display: flex;
-}
-
-.quote {
-  font-size: 24px;
-  font-weight: 100px;
-}
-
-.quote-credit {
-  text-align: right;
-  padding: 20px 1em;
-  font-family: 'Roboto';
-  font-weight: 100;
-}
-
-/* Sign-up Page */
-
-.container.action-section {
-  background-color: rgba(238, 238, 238, 0.8);
-  padding: 5em 0;
-  margin: 0;
-  text-align: center;
-  display: grid;
-  place-items: center;
-}
-
-.card {
-  background-color: #1f2937;
-  padding: 4em 5em;
-  border-radius: 10px;
-  gap: 15px;
-  display: flex;
-  width: 50em;
-  align-items: center;
-}
-
-.sign-up {
-  margin: 0 auto;
-  text-align: left;
-}
-
-.sign-up-title {
-  font-size: 2em;
-  font-weight: 700;
-  padding-bottom: .7em;
-}
-
-.sign-up-content {
-  font-size: 1.5em;
-  font-weight: 100;
-  margin-right: auto;
-}
-
-/* Footer */
-
-.footer {
   color: #fff;
-  height: 8em;
-  padding: 16px 5em;
+}
+
+.nav-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
-.footer .footer-text {
-  font-size: 28px;
-  font-weight: 300;
-}
-
-.footer-link {
-  color: rgba(0, 135, 168, 1);
-}
-
-.footer-link:hover, 
-.footer-link:focus {
-  color: rgba(0, 135, 168, 0.8);
-  transition: all 0.3s ease 0s;
+.logo {
+  width: 50px;
+  margin-bottom: 20px;
 }
