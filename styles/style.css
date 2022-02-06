@@ -12,9 +12,28 @@ body {
   background-color: #1f2937;
 }
 
+button {
+  background-color: rgb(43, 129, 129);
+  border: none;
+  padding: 8px 2em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover,
+button:focus {
+  background-color: rgba(43, 129, 129, 0.8);
+  transition: all 0.3s ease 0s;
+}
+
 /* border */
 
-/* {
+/* .about-imgs {
   border: 2px solid rgba(255, 255, 0, 0.3);
 } */
 
@@ -84,21 +103,138 @@ h1 {
   font-size: 40px;
 }
 
-button {
+.img-placeholder img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+/* about page */
+
+.container.about-section {
+  background-color: aliceblue;
+}
+
+.about-section .random-info {
+  color: #1f2937;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 30px;
+  padding-bottom: 20px;
+}
+
+.random-info .about-title {
+  margin: 30px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.random-info .about-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info img {
+  width: 130px;
+  border-radius: 5px;
+}
+
+.about-imgs .info {
+  width: 130px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.info .text {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.about-imgs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+/* Quote */
+
+.container.quote-section {
+  padding: 30px;
+}
+
+.quote-section p {
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: left;
+  padding: 0 50px;
+}
+
+.quote-section .quote-credit {
+  font-size: 16px;
+  text-align: right;
+}
+
+/* Sign-up page */
+
+.container.action-section {
+  background-color: aliceblue;
+  padding: 30px;
+}
+
+.action-section .card {
+  background-color:#1f2937;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card .sign-up {
+  padding: 20px 20px 0;
+  color: #fff;
+}
+
+.sign-up .title {
+  font-weight: 600;
+}
+
+.sign-up .content {
+  font-size: 12px;
+  margin-top: -1em;
+}
+
+.card button {
   background-color: rgb(43, 129, 129);
   border: none;
-  padding: 8px 2em;
+  padding: 6px 1.7em;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 12px;
 }
 
-button a {
-  color: #fff;
+/* Footer */
+
+.container.footer {
+  display: block;
+  height: 50px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 12px;
+  padding-top: 17px;
+}
+
+.footer-text a {
   text-decoration: none;
+  color: rgb(54, 187, 187);
 }
 
-button:hover,
-button:focus {
-  color: rgba(43, 129, 129, 0.7);
+.footer-text a:hover,
+.footer-text a:focus {
+  color: rgba(54, 187, 187, 0.8);
   transition: all 0.3s ease 0s;
 }
