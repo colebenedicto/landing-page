@@ -12,9 +12,11 @@ body {
   background-color: #1f2937;
 }
 
-nav {
-  border: 2px solid yellow;
-}
+/* border */
+
+/* {
+  border: 2px solid rgba(255, 255, 0, 0.3);
+} */
 
 header {
   display: flex;
@@ -26,6 +28,9 @@ header {
 
 li {
   list-style: none;
+  margin: 0 1.5em;
+  text-align: center;
+  font-size: 14px;
 }
 
 li a {
@@ -33,12 +38,67 @@ li a {
   color: #fff;
 }
 
+li a:hover,
+li a:focus {
+  color: rgb(43, 129, 129);
+  transition: all 0.3s ease 0s;
+}
+
 .nav-links {
   display: flex;
-  
 }
 
 .logo {
-  width: 50px;
+  width: 90px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* main */
+
+main,
+main .hero {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 30px;
+}
+
+main {
+  margin-top: -25px;
+}
+
+.hero h1, p, button {
+  margin-bottom: 20px;
+}
+
+.hero h1, p {
+  text-align: center;
+}
+
+.img-placeholder {
+  margin-top: -40px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+button {
+  background-color: rgb(43, 129, 129);
+  border: none;
+  padding: 8px 2em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover,
+button:focus {
+  color: rgba(43, 129, 129, 0.7);
+  transition: all 0.3s ease 0s;
 }
